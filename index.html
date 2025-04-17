@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1 class="logo">Gadgetry</h1>
+    <div class="nav-icons">
+      <span>🛒</span>
+      <span>👤</span>
+      <span>🏠</span>
+    </div>
+  </header>
+  <!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Search for gadgets..." />
+  <button><img src="./images/4410940.png"/></button>
+</div>
+
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main class="products">
+    <div class="product-card">
+      <img src="./images/istockphoto-184498500-612x612.webp" alt="Product 1" />
+      <h2>Wireless Earbuds Pro</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/photo-1609081219090-a6d81d3085bf.avif" alt="Product 2" />
+      <h2>Smartwatch X9</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/photo-1572569511254-d8f925fe2cbb.avif" alt="Product 2" />
+      <h2>4K Action Camera</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/photo-1527864550417-7fd91fc51a46.avif" alt="Product 2" />
+      <h2>Bluetooth Speaker Mini</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/photo-1527443224154-c4a3942d3acf.avif" alt="Product 2" />
+      <h2>USB-C Fast Charger</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/istockphoto-1189984324-612x612.webp" alt="Product 2" />
+      <h2>Ergonomic Keyboard</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/istockphoto-1249503408-612x612.webp" alt="Product 2" />
+      <h2>Portable SSD 1TB</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/photo-1617043983671-adaadcaa2460.avif" alt="Product 2" />
+      <h2>Fitness Tracker Band</h2>
+      <div class="product-actions">
+        <button class="buy-now">🛒</button>
+        <button class="add-to-cart">➕</button>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </main>
+  <div id="fullscreen-image">
+    <img src="./images/Group_12241_c2eef61c-21d6-4fa0-b0c1-bff147afe12a.svg" alt="picture" />
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: support@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 YourCompany. All rights reserved.</p>
+    </div>
+  </footer>  
+  
+  <script>
+    function toggleMenu(){
+      const sideMenu = document.getElementById("sideMenu");
+      sideMenu.classList.toggle("open");
+    }
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      const sideMenu = document.getElementById("sideMenu");
+      const menuIcon = document.querySelector(".menu-icon");
+
+      if (!sideMenu.contains(e.target) && !menuIcon.contains(e.target)) {
+        sideMenu.classList.remove("open");
+      }
+    });
+  </script>
+
+</body>
+</html>
