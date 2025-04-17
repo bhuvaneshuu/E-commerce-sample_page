@@ -130,23 +130,6 @@
       <p>&copy; 2025 YourCompany. All rights reserved.</p>
     </div>
   </footer>  
-  
-  <script>
-    function toggleMenu(){
-      const sideMenu = document.getElementById("sideMenu");
-      sideMenu.classList.toggle("open");
-    }
-
-    // Optional: Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-      const sideMenu = document.getElementById("sideMenu");
-      const menuIcon = document.querySelector(".menu-icon");
-
-      if (!sideMenu.contains(e.target) && !menuIcon.contains(e.target)) {
-        sideMenu.classList.remove("open");
-      }
-    });
-  </script>
-
+  <script> src="test.js" </script>
 </body>
 </html>
